@@ -1,0 +1,44 @@
+/* styles.css - Pulmão de Aço (final version) */
+:root{
+  --bg:#0b0b0b;
+  --accent:#e32222;
+  --muted:#cfcfcf;
+  --card:#111;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:var(--muted);background:var(--bg);-webkit-font-smoothing:antialiased}
+.topbar{position:fixed;top:0;left:0;right:0;height:60px;display:flex;align-items:center;justify-content:center;z-index:40;background:linear-gradient(180deg, rgba(0,0,0,0.6), transparent)}
+.search{display:flex;align-items:center;background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;gap:8px;width:min(760px,92%);}
+.search input{background:transparent;border:0;outline:none;color:var(--muted);font-size:16px;width:100%}
+.lupa{font-size:18px;opacity:0.85}
+
+/* Splash */
+.splash{position:fixed;inset:0;background:linear-gradient(180deg, rgba(10,10,10,0.95), rgba(0,0,0,0.9));display:flex;align-items:center;justify-content:center;z-index:50}
+.splash-content{text-align:center;padding:28px;border-radius:12px}
+.splash h1{color:white;font-size:36px;margin:0 0 8px}
+.subtitle{color:rgba(255,255,255,0.85);margin-bottom:18px}
+.enter-btn{background:var(--accent);border:0;padding:12px 22px;border-radius:10px;color:white;font-weight:600;cursor:pointer;box-shadow:0 8px 18px rgba(227,34,34,0.12);font-size:16px;transition:transform .18s ease}
+.enter-btn:active{transform:scale(.98)}
+
+/* Main content */
+.hidden{display:none}
+main{padding:100px 20px 60px;max-width:980px;margin:0 auto}
+.hero{margin-bottom:24px}
+.hero h2{color:white;margin:0 0 6px}
+.hero p{color:rgba(255,255,255,0.7)}
+
+/* Bars */
+.bars{display:flex;flex-direction:column;gap:18px;margin-top:6px}
+.bar{background:linear-gradient(90deg, rgba(255,0,0,0.06), rgba(255,0,0,0.02));border-left:6px solid var(--accent);padding:18px;border-radius:8px;cursor:pointer;transform:translateY(12px);opacity:0;transition:all .6s cubic-bezier(.2,.9,.2,1)}
+.bar h3{margin:0;color:white;font-size:18px}
+.bar p{margin:6px 0 0;color:rgba(255,255,255,0.7)}
+
+/* Click animation */
+.bar:active{transform:scale(.995)}
+
+/* Simple responsive */
+@media (max-width:600px){
+  .splash h1{font-size:28px}
+  .enter-btn{width:100%}
+  .search input{font-size:14px}
+}

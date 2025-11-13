@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pulmão de Aço — Início</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Splash overlay with Entrar button (visible on load) -->
+<div id="splash" class="splash">
+  <div class="splash-content">
+    <h1>Pulmão de Aço</h1>
+    <p class="subtitle">A mudança começa agora.</p>
+    <button id="enterBtn" class="enter-btn">Entrar</button>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="search">
+    <span class="lupa">🔍</span>
+    <input id="searchInput" placeholder="procure mais soluções aqui" />
+  </div>
+</header>
+
+<main id="mainContent" class="hidden">
+  <section class="hero">
+    <h2>Bem-vindo</h2>
+    <p>Escolha um caminho e comece a transformar sua vida.</p>
+  </section>
+
+  <section id="bars" class="bars">
+    <div class="bar" data-target="pages/cigarro.html"><h3>🚭 Superar o cigarro</h3><p>Como largar o cigarro com métodos clínicos.</p></div>
+    <div class="bar" data-target="pages/alcool.html"><h3>🍺 Vencer o álcool</h3><p>Tratamentos comprovados e histórias de superação.</p></div>
+    <div class="bar" data-target="pages/drogas.html"><h3>💊 Lutar contra as drogas</h3><p>Ajuda clínica e redes de suporte.</p></div>
+    <div class="bar" data-target="pages/ajuda.html"><h3>💬 Buscar ajuda</h3><p>Onde encontrar suporte imediato e contatos úteis.</p></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
