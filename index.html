@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pulmão de Aço — Superação e Apoio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Pulmão de Aço — apoio e motivação para vencer vícios (fumo, álcool, drogas). Tradução automática, imagens motivacionais e animações." />
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+</head>
+<body>
+  <!-- Splash / Intro overlay -->
+  <div id="splash" class="splash">
+    <div class="splash-inner" role="dialog" aria-modal="true" aria-label="Introdução">
+      <h1 id="splashText">Venha vencer seus vícios aqui</h1>
+      <button id="enterBtn" class="enter-btn">Entrar no Pulmão de Aço</button>
+      <div class="splash-hint">Clique em entrar para continuar</div>
+    </div>
+  </div>
+
+  <header class="site-header" aria-hidden="true">
+    <div class="logo">
+      <h1>Pulmão de Aço</h1>
+      <p class="tagline">Força, esperança e passos pequenos — juntos</p>
+    </div>
+    <div class="controls">
+      <div id="google_translate_element" style="display:none;"></div>
+      <button id="languageBtn" class="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+        <span class="globe" aria-hidden="true">🌐</span>
+        <span class="lang-text">Language</span>
+        <span class="caret">▾</span>
+      </button>
+      <div id="langDropdown" class="lang-dropdown" role="listbox" aria-label="Language list"></div>
+    </div>
+  </header>
+
+  <main id="mainContent" class="hidden" aria-hidden="true">
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="fade-in">Você não está sozinho.</h2>
+        <p class="fade-in delay">Escolha um caminho. Nós temos recursos, animações motivacionais e histórias para cada vício.</p>
+        <div class="options">
+          <button class="option-card" data-target="smoke">
+            <div class="icon">🚭</div>
+            <h3>Parar de fumar</h3>
+            <p>Passos práticos e diário de progresso.</p>
+          </button>
+          <button class="option-card" data-target="alcohol">
+            <div class="icon">🥃</div>
+            <h3>Vencer o álcool</h3>
+            <p>Estratégias, apoio e exercícios.</p>
+          </button>
+          <button class="option-card" data-target="drugs">
+            <div class="icon">💊</div>
+            <h3>Superar drogas</h3>
+            <p>Recursos de reabilitação e primeiros passos.</p>
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?auto=format&fit=crop&w=1200&q=60" alt="motivational" />
+      </div>
+    </section>
+
+    <section id="resources" class="resources">
+      <h2>Recursos em vídeo</h2>
+      <div class="search-wrap">
+        <label for="videoSearch" class="search-label">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input id="videoSearch" type="search" placeholder="procure mais soluções aqui" aria-label="Procurar vídeos" />
+        </label>
+      </div>
+
+      <div id="videoList" class="video-list">
+        <div class="video-item" data-tags="fumar parar motivação">
+          <h3>Como eu parei de fumar — história real</h3>
+          <iframe src="https://www.youtube.com/embed/HC1rV3vWbFQ" title="vídeo 1" allowfullscreen></iframe>
+        </div>
+        <div class="video-item" data-tags="álcool recuperação apoio">
+          <h3>Recuperação do álcool: passos iniciais</h3>
+          <iframe src="https://www.youtube.com/embed/3jZ5vnv-LZc" title="vídeo 2" allowfullscreen></iframe>
+        </div>
+        <div class="video-item" data-tags="drogas dependência reabilitação">
+          <h3>Vida depois das drogas — relato</h3>
+          <iframe src="https://www.youtube.com/embed/2vjPBrBU-TM" title="vídeo 3" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="details" class="details">
+      <div id="smoke" class="detail-panel active">
+        <h2>Parar de fumar</h2>
+        <p>Respirações profundas, substituição e passos de 5 minutos — pequenos hábitos formam grandes mudanças.</p>
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=60" alt="ex-fumante" />
+        <ul>
+          <li>Defina uma data</li>
+          <li>Remova gatilhos</li>
+          <li>Peça apoio</li>
+        </ul>
+      </div>
+
+      <div id="alcohol" class="detail-panel">
+        <h2>Vencer o álcool</h2>
+        <p>Reconhecer os padrões é o primeiro passo. Use lembretes e substituições positivas.</p>
+        <img src="https://images.unsplash.com/photo-1504722598893-6e8f5a6a9f2c?auto=format&fit=crop&w=1000&q=60" alt="ajuda álcool" />
+        <ul>
+          <li>Identifique gatilhos sociais</li>
+          <li>Planeje alternativas</li>
+          <li>Considere terapia</li>
+        </ul>
+      </div>
+
+      <div id="drugs" class="detail-panel">
+        <h2>Superar drogas</h2>
+        <p>A recuperação é um processo: ajuda médica, Apoio psicológico e redes de suporte.</p>
+        <img src="https://images.unsplash.com/photo-1518976024611-7d95a6c8b12f?auto=format&fit=crop&w=1000&q=60" alt="recuperação" />
+        <ul>
+          <li>Procure atendimento</li>
+          <li>Crie uma rede de apoio</li>
+          <li>Trabalhe habilidades de enfrentamento</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="quotes">
+      <h2>Frases motivacionais</h2>
+      <div class="quote-cards">
+        <blockquote class="quote">"Um passo de cada vez. A persistência vence o impossível."</blockquote>
+        <blockquote class="quote">"O futuro é construído hoje — escolha bem seus pequenos hábitos."</blockquote>
+        <blockquote class="quote">"Peça ajuda. Não é fraqueza; é coragem."</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-hidden="true">
+    <p>© Pulmão de Aço — Projetado para apoiar jornada contra vícios.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
